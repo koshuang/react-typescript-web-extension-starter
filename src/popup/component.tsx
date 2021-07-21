@@ -3,6 +3,8 @@ import { Hello } from "@src/components/hello";
 import { browser } from "webextension-polyfill-ts";
 import { Scroller } from "@src/components/scroller";
 import "./styles.scss";
+import { ThemeProvider } from "@material-ui/core/styles";
+import { theme } from "@src/styles/theme";
 
 // // // //
 
@@ -14,12 +16,14 @@ export const Popup: FunctionComponent = () => {
 
     // Renders the component tree
     return (
-        <div className="popup-container">
-            <div className="container mx-4 my-4">
-                <Hello />
-                <hr />
-                <Scroller />
+        <ThemeProvider theme={theme}>
+            <div className="popup-container">
+                <div className="container mx-4 my-4">
+                    <Hello />
+                    <hr />
+                    <Scroller />
+                </div>
             </div>
-        </div>
+        </ThemeProvider>
     );
 };

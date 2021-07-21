@@ -1,12 +1,22 @@
+import { Button, Divider } from "@material-ui/core";
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import React, { FunctionComponent } from "react";
-import "./styles.scss";
 import { browser, Tabs } from "webextension-polyfill-ts";
+import "./styles.scss";
 
 // // // //
 
 // Scripts to execute in current tab
 const scrollToTopScript = `window.scroll(0,0)`;
 const scrollToBottomScript = `window.scroll(0,9999999)`;
+
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        margin: {
+            margin: theme.spacing(1),
+        },
+    }),
+);
 
 /**
  * Executes a string of Javascript on the current tab
@@ -39,21 +49,28 @@ function executeScript(code: string): void {
 // // // //
 
 export const Scroller: FunctionComponent = () => {
+    const classes = useStyles();
+
     return (
         <div className="row">
             <div className="col-lg-12">
-                <button
-                    className="btn btn-block btn-outline-dark"
+                <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.margin}
                     onClick={(): void => executeScript(scrollToTopScript)}
                 >
                     Scroll To Top
-                </button>
-                <button
-                    className="btn btn-block btn-outline-dark"
+                </Button>
+                <Divider />
+                <Button
+                    variant="contained"
+                    color="secondary"
+                    className={classes.margin}
                     onClick={(): void => executeScript(scrollToBottomScript)}
                 >
                     Scroll To Bottom
-                </button>
+                </Button>
             </div>
         </div>
     );
