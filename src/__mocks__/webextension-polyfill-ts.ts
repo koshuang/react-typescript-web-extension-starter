@@ -7,6 +7,14 @@ export const browser: any = {
         executeScript(currentTabId: number, details: any) {
             return Promise.resolve({ done: true });
         },
+        query() {
+            return Promise.resolve([{ id: 1 }]);
+        },
+    },
+    runtime: {
+        sendMessage(message: any) {
+            console.log(message);
+        },
     },
 };
 
