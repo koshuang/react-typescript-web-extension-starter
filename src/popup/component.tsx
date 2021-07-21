@@ -1,10 +1,10 @@
-import React, { FunctionComponent } from "react";
-import { Hello } from "@src/components/hello";
-import { browser } from "webextension-polyfill-ts";
-import { Scroller } from "@src/components/scroller";
-import "./styles.scss";
 import { ThemeProvider } from "@material-ui/core/styles";
+import { Hello } from "@src/components/hello";
+import { Scroller } from "@src/modules/scroller";
 import { theme } from "@src/styles/theme";
+import React, { FunctionComponent } from "react";
+import { browser } from "webextension-polyfill-ts";
+import "./styles.scss";
 
 // // // //
 
