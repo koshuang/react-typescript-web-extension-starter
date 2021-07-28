@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@material-ui/core/styles";
-import { Hello } from "@src/modules/hello";
-import { Scroller } from "@src/modules/scroller";
-import { theme } from "@src/styles/theme";
+import { Hello } from "@modules/hello";
+import { Scroller } from "@modules/scroller";
+import { theme } from "@styles/theme";
 import React, { FunctionComponent } from "react";
 import { browser } from "webextension-polyfill-ts";
 import "./styles.scss";

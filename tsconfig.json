@@ -2,8 +2,10 @@
     "compilerOptions": {
         "baseUrl": "./",
         "paths": {
-            "@src/*": ["src/*"],
-            "@modules/*": ["src/modules/*"]
+            "@src/*": ["./src/*"],
+            "@scss/*": ["./src/scss/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@modules/*": ["./src/modules/*"]
         },
         "target": "es5",
         "module": "commonjs",

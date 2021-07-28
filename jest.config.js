@@ -54,6 +54,8 @@ module.exports = {
     // A map from regular expressions to module names that allow to stub out resources with a single module
     moduleNameMapper: {
         "@src/(.*)": "<rootDir>/src/$1",
+        "@modules/(.*)": "<rootDir>/src/modules/$1",
+        "@styles/(.*)": "<rootDir>/src/styles/$1",
         "\\.(css|less|scss|sss|styl)$":
             "<rootDir>/node_modules/jest-css-modules",
     },

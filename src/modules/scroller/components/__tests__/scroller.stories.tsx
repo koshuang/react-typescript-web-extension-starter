@@ -1,4 +1,4 @@
-import { Story } from "@src/modules/dev";
+import { Story } from "@modules/dev";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import { Scroller } from "../component";

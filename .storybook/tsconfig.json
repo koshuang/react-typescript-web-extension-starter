@@ -11,7 +11,10 @@
         "rootDir": "../",
         "baseUrl": "../",
         "paths": {
-            "@src/*": ["src/*"]
+            "@src/*": ["src/*"],
+            "@scss/*": ["src/scss/*"],
+            "@styles/*": ["src/styles/*"],
+            "@modules/*": ["src/modules/*"]
         },
         "outDir": "dist",
         "noImplicitReturns": true,
