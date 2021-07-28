@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@material-ui/core/styles";
-import { Hello } from "@src/components/hello";
+import { Hello } from "@src/modules/hello";
 import { Scroller } from "@src/modules/scroller";
 import { theme } from "@src/styles/theme";
 import React, { FunctionComponent } from "react";
