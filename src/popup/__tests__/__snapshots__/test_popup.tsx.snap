@@ -28,16 +28,55 @@ exports[`component renders 1`] = `
         className="col-lg-12"
       >
         <button
-          className="btn btn-block btn-outline-dark"
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-margin-1 MuiButton-containedPrimary"
+          disabled={false}
+          onBlur={[Function]}
           onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
         >
-          Scroll To Top
+          <span
+            className="MuiButton-label"
+          >
+            Scroll To Top
+          </span>
         </button>
+        <hr
+          className="MuiDivider-root"
+        />
         <button
-          className="btn btn-block btn-outline-dark"
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-margin-1 MuiButton-containedSecondary"
+          disabled={false}
+          onBlur={[Function]}
           onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
         >
-          Scroll To Bottom
+          <span
+            className="MuiButton-label"
+          >
+            Scroll To Bottom
+          </span>
         </button>
       </div>
     </div>
