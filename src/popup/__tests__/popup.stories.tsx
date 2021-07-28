@@ -1,4 +1,4 @@
-import { Story } from "@src/components/dev";
+import { Story } from "@src/modules/dev";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import { Popup } from "../component";
