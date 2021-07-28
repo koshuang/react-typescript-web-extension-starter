@@ -14,7 +14,9 @@
 
 ![React TypeScript Web Extension Starter](https://i.imgur.com/DLXldrn.png)
 
-:desktop_computer: A Web Extension starter kit built with React, TypeScript, SCSS, Storybook, EsLint, Prettier, Jest, Bootstrap,x &amp; Webpack. Compatible with Google Chrome, Mozilla Firefox, and Brave.
+:desktop_computer: A Web Extension starter kit built with React, TypeScript, SCSS, Storybook, EsLint, Prettier, Jest, Material UI,x &amp; Webpack. Compatible with Google Chrome, Mozilla Firefox, and Brave.
+
+It use modular folder architecture which make you easily build modules.
 
 ![Example Extension Popup](https://i.imgur.com/Wp37usG.png "Example Extension Popup")
 
@@ -91,7 +93,7 @@ In [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/), open up the [a
 -   [Prettier](https://prettier.io/)
 -   [Webpack](https://webpack.js.org/)
 -   [Babel](https://babeljs.io/)
--   [Bootstrap](https://getbootstrap.com)
+-   [Material UI](https://material-ui.com/)
 -   [SCSS](https://sass-lang.com/)
 -   [webextension-polyfill-ts](https://github.com/Lusito/webextension-polyfill-ts)
 
