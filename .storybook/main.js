@@ -7,6 +7,9 @@ module.exports = {
         "@storybook/addon-actions/register",
         "@storybook/addon-viewport/register",
     ],
+    core: {
+        builder: "webpack5",
+    },
     webpackFinal: async (config) => {
         config.module.rules.push({
             exclude: /node_modules/,
